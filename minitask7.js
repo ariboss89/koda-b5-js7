@@ -14,10 +14,10 @@ function Hitung({
   bahasa_indonesia,
   ipa,
 } = hasilUjian) {
-  //const { matematika, bahasa_inggris, bahasa_indonesia, ipa } = hasilUjian;
+  const countObj = Object.keys(hasilUjian).length;
 
   nilaiTotal = matematika + bahasa_inggris + bahasa_indonesia + ipa;
-  nilaiRataRata = nilaiTotal / 4;
+  nilaiRataRata = nilaiTotal / countObj;
 
   console.log(nilaiTotal);
   console.log(nilaiRataRata);
